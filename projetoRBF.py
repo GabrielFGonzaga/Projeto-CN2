@@ -17,8 +17,8 @@ plt.show()
 
 N_treino = len(y_treino)
 
-y1_treino = np.concatenate(([0.0, 0.0], y_treino)) # agora y = [0,0,(y original)]
-u1_treino = np.concatenate(([0.0], u_treino)) # e u = [0,u(original)]
+y1_treino = np.concatenate(([0.0, 0.0], y_treino)) 
+u1_treino = np.concatenate(([0.0], u_treino)) 
 
 x0 = y1_treino[1 : N_treino + 1] # Corresponde a y[n-1]
 x1 = y1_treino[0 : N_treino]     # Corresponde a y[n-2]
