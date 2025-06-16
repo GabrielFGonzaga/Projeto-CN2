@@ -25,8 +25,8 @@ x1 = y1_treino[0 : N_treino]     # Corresponde a y[n-2]
 x2 = u1_treino[1 : N_treino + 1] # Corresponde a u[n]
 x3 = u1_treino[0 : N_treino]     # Corresponde a u[n-1]
 
-sigma = 3.29
-centros = np.linspace(y1_treino.max(),y1_treino.min(), 4)
+sigma = 2.7
+centros = [-3, -1, 1, 3]
 
 g0 = np.exp(- (1 / (2 * sigma**2)) * (x0 - centros[0])**2)
 g1 = np.exp(- (1 / (2 * sigma**2)) * (x1 - centros[1])**2)
